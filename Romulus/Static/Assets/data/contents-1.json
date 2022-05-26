@@ -10,6 +10,12 @@
       "PanelTitle": "Test Panel",
       "PanelText": "This will be content",
       "PanelType": "FullWidth"
+    },
+    {
+      "PanelTitle": "Test Panel",
+      "PanelText": "This will be content",
+      "PanelType": "ImageLeft",
+      "PanelImage": "https://images.pexels.com/photos/189524/pexels-photo-189524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
   ]
 }
