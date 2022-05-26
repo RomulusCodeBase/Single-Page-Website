@@ -3,15 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Demon Dementia</title>
+    <title>Romulus Energy</title>
     <link href="./Tools/aos.min.css" rel="stylesheet" type="text/css">
     <link href="./Assets/css/app.css" rel="stylesheet" type="text/css">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <link rel="preconnect" href="./Tools/fonts.min.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet"> 
 </head>
 <body x-data="homepage" class="overflow-x-hidden m-auto max-w-[1920px] bg-[#D1D1D1]">
-    <div class="w-full bg-red min-h-[250px] 
+    <div class="w-full bg-black min-h-[75px] 
     flex items-center justify-center uppercase font-medium overline text-[50px] text-center text-white px-sitepadding">
         <h1 id="Title" class="font-roboto font-black" data-aos="fade-down" x-text="ContentBlocks[0].data.Title"></h1>
     </div>
@@ -19,9 +20,8 @@
     <div class="block overflow-hidden">
         <div class="flex-col m-auto flex items-center justify-center">
             <div class="max-h-[550px] overflow-hidden flex w-full items-center justify-center min-w-[1920px]">
-                <video autoplay="true" muted="muted">
-                    
-                </video>
+                <h1 class="absolute font-medium font-roboto text-4xl text-white"><b>Romulus Energy</b></h2>
+                <img src="./Assets/images/HeroImage.jpg" class="mb-[400px]">
             </div>
             <div @click="ScrollToContent()"
             class="hover:cursor-pointer border-[3px] -mt-[100px] mb-[100px] border-solid border-white h-[30px] w-[30px] rounded-full flex align-center justify-center">
@@ -33,7 +33,7 @@
     <div id="contents-container" class="-mt-[30px] bg-white px-sitepadding min-w-full font-roboto] m-auto overflow-hidden py-[50px]" data-aos="fade-up" x-init="RenderComponents">
         <template x-for="panel in ContentBlocks[1].data.PanelList">
             <div class="flex flex-wrap flex-col tablet-up:flex-row" :class="panel.PanelType">
-                <div class="flex-1 relative p-[50px] min-h-[600px] tablet-up:max-w-panel-width text-red flex items-center justify-center border-red border-[3px] border-solid" :class="panel.PanelType">
+                <div class="flex-1 relative p-[50px] min-h-[600px] tablet-up:max-w-panel-width text-purple flex items-center justify-center border-purple border-[3px] border-solid" :class="panel.PanelType">
                     <div class="max-w-[600px]">
                         <h2 class="uppercase font-roboto font-medium overline text-[30px] mb-[25px]" x-text="panel.PanelTitle"></h2>
                         <p class="text-black font-roboto" x-html="panel.PanelText"></p>
@@ -48,7 +48,7 @@
         </template>
     </div>
 
-    <footer data-aos="fade-up" class="w-full px-sitepadding flex items-center justify-between bg-red text-white min-h-[125px] font-roboto">
+    <footer data-aos="fade-up" class="w-full px-sitepadding flex items-center justify-between bg-black text-white min-h-[75px] font-roboto">
        
     </footer>
 

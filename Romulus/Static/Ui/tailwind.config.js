@@ -1,8 +1,6 @@
 module.exports = {
   content: [
-    "C:/Users/conno/source/repos/DementiaNetwork/DementiaNetwork/wwwroot/Static/*.html",
-    "C:/Users/conno/Desktop/DementiaNetwork/DementiaNetwork/wwwroot/Static/*.html",
-    "C:/Users/conno/Desktop/DemonDementiaV2/DemonDementia/DementiaNetwork/wwwroot/Static/*.html"
+    "C:/Users/conno/Desktop/Romulus/Romulus/Static/*.html"
   ],
   mode: 'jit',
   theme: {
@@ -10,7 +8,8 @@ module.exports = {
       colors: {
         white: '#FFFFFF', 
         black: '#000000',
-        red: '#BB1819',
+        blue: '#89CFF0',
+        purple: '#CF9FFF',
         grey: '#A9A9A9'
       },
       padding: {
@@ -20,7 +19,7 @@ module.exports = {
         'webkit-fill': '-webkit-fill-available',
       }, 
       fontFamily: {
-        'roboto': ['"Libre Baskerville"', 'sans-serif']
+        roboto: "'Roboto Slab', serif",
       },
       maxWidth: {
         'sitewidth': '1200px',

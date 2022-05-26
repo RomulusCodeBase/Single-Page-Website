@@ -476,29 +476,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.z-\[-1\] {
-  z-index: -1;
-}
-
 .m-auto {
   margin: auto;
 }
 
-.my-\[50px\] {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.mt-\[100px\] {
-  margin-top: 100px;
-}
-
-.mb-\[25px\] {
-  margin-bottom: 25px;
+.mb-\[400px\] {
+  margin-bottom: 400px;
 }
 
 .-mt-\[100px\] {
@@ -513,16 +496,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: -30px;
 }
 
+.mb-\[25px\] {
+  margin-bottom: 25px;
+}
+
 .block {
   display: block;
 }
 
 .flex {
   display: flex;
-}
-
-.h-\[80px\] {
-  height: 80px;
 }
 
 .h-\[30px\] {
@@ -533,48 +516,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 20px;
 }
 
-.max-h-screen {
-  max-height: 100vh;
-}
-
 .max-h-\[550px\] {
   max-height: 550px;
 }
 
-.min-h-screen {
-  min-height: 100vh;
+.min-h-\[75px\] {
+  min-height: 75px;
 }
 
 .min-h-\[600px\] {
   min-height: 600px;
-}
-
-.min-h-\[300px\] {
-  min-height: 300px;
-}
-
-.min-h-\[500px\] {
-  min-height: 500px;
-}
-
-.min-h-full {
-  min-height: 100%;
-}
-
-.min-h-\[100px\] {
-  min-height: 100px;
-}
-
-.min-h-\[250px\] {
-  min-height: 250px;
-}
-
-.min-h-\[125px\] {
-  min-height: 125px;
-}
-
-.w-\[80px\] {
-  width: 80px;
 }
 
 .w-full {
@@ -585,24 +536,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 30px;
 }
 
-.min-w-full {
-  min-width: 100%;
-}
-
 .min-w-\[1920px\] {
   min-width: 1920px;
 }
 
-.max-w-sitewidth {
-  max-width: 1200px;
+.min-w-full {
+  min-width: 100%;
 }
 
-.max-w-\[500px\] {
-  max-width: 500px;
-}
-
-.max-w-\[1500px\] {
-  max-width: 1500px;
+.max-w-\[1920px\] {
+  max-width: 1920px;
 }
 
 .max-w-\[600px\] {
@@ -611,10 +554,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[800px\] {
   max-width: 800px;
-}
-
-.max-w-\[1920px\] {
-  max-width: 1920px;
 }
 
 .flex-1 {
@@ -630,20 +569,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
-.flex-col-reverse {
-  flex-direction: column-reverse;
-}
-
 .flex-wrap {
   flex-wrap: wrap;
 }
 
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-center {
@@ -679,14 +610,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-red {
+.border-purple {
   --tw-border-opacity: 1;
-  border-color: rgb(187 24 25 / var(--tw-border-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  border-color: rgb(207 159 255 / var(--tw-border-opacity));
 }
 
 .bg-\[\#D1D1D1\] {
@@ -694,9 +620,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(209 209 209 / var(--tw-bg-opacity));
 }
 
-.bg-red {
+.bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(187 24 25 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -723,19 +649,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .font-roboto {
-  font-family: "Libre Baskerville", sans-serif;
-}
-
-.text-\[30px\] {
-  font-size: 30px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .text-\[50px\] {
   font-size: 50px;
 }
 
-.text-\[25px\] {
-  font-size: 25px;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
 }
 
 .font-medium {
@@ -750,19 +677,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-transform: uppercase;
 }
 
-.text-red {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(187 24 25 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-purple {
+  --tw-text-opacity: 1;
+  color: rgb(207 159 255 / var(--tw-text-opacity));
 }
 
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .overline {
@@ -805,11 +732,6 @@ html {
 }
 
 @media (min-width: 800px) {
-  .tablet-up\:my-\[50px\] {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
   .tablet-up\:min-h-\[600px\] {
     min-height: 600px;
   }
