@@ -508,6 +508,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 25px;
 }
 
+.mt-\[30px\] {
+  margin-top: 30px;
+}
+
 .block {
   display: block;
 }
@@ -546,6 +550,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-h-\[125\] {
   min-height: 125;
+}
+
+.min-h-\[125px\] {
+  min-height: 125px;
 }
 
 .w-full {
