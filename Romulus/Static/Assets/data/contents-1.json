@@ -1,0 +1,10 @@
+{
+  "PanelList": [
+    {
+      "PanelTitle": "Test Panel",
+      "PanelText": "This will be content",
+      "PanelType": "ImageLeft",
+      "PanelImage": "/Assets/Images/pexels-flickr-157039.jpg"
+    }
+  ]
+}
