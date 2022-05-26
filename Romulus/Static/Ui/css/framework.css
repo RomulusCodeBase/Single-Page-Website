@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.FullWidth, .FullWidth div{
+    max-width: 100% !important;
+    flex: auto;
+    margin: 50px 0px;
+    font-size: x-large;
+    background-color: #BB1819;
+}
+
+.FullWidth p{
+
+    color: white !important;
+
+}
+
+.FullWidth ~ .FullWidth1{
+    display: none;
+}
+
+.ImageLeft{
+    flex-direction: row-reverse !important;
+}
+
+@media screen and (max-width: 800px) {
+    .ImageLeft {
+      flex-direction: column !important;
+    }
+  }

@@ -1,0 +1,43 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: Assets/Images
+
+collections:
+  - name: "Contents"
+    label: "Contents"
+    extension: "json"
+    files:
+      - file: "DementiaNetwork/wwwroot/Static/Assets/data/contents.json"
+        label: "Content"
+        name: "Content"
+        fields:
+          - { name: Title, label: Title, widget: string }
+          - { name: Footer, label: Footer, widget: string }
+
+
+  - name: "Panels"
+    label: "Panels"
+    description: "Add a panel to your site"
+    files:
+      - label: "Site Panels"
+        name: "Panel"
+        file: "DementiaNetwork/wwwroot/Static/Assets/data/contents-1.json"
+        fields:
+          - label: "Panel List"
+            name: "PanelList"
+            widget: "list"
+            fields:
+              - { name: PanelTitle, label: Panel Title, widget: "string", required: false}
+              - { name: PanelText, label: Panel Text, widget: "markdown", required: false}
+              - { name: PanelType, label: Panel Type, widget: "select", options: ["ImageLeft", "ImageRight", "FullWidth"]}
+              - { name: PanelImage, label: Panel Image, widget: "image", required: false}
+  
+  
+
+
+
+
+
+  

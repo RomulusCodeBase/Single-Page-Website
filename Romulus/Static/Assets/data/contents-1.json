@@ -1,0 +1,34 @@
+{
+  "PanelList": [
+    {
+      "PanelTitle": "AI for Precision Dementia Medicine",
+      "PanelText": "In partnership with the UK Dementia Research Institute, the DEMON Network Summit will take place on the 13th and 14th of June 2022 at the Royal Society in London, UK.  The Summit is funded by the Alan Turing Institute and Alzheimer’s Research UK.\n\n",
+      "PanelType": "ImageLeft",
+      "PanelImage": "/Assets/images/summit2022sponsors-2.png"
+    },
+    {
+      "PanelText": "The summit will bring together leading scientists, clinicians, funders, and industry representatives to identify how contemporary data science and artificial intelligence approaches can help to tackle dementia and promote brain health. We will also discuss how to develop a sustainable community to accelerate progress and change the landscape to support a more innovative and integrated approach.",
+      "PanelType": "ImageRight",
+      "PanelTitle": "",
+      "PanelImage": "/Assets/images/ai-picture-brain.png"
+    },
+    {
+      "PanelTitle": "",
+      "PanelText": "The summit will provide a much-needed forum to illuminate contested areas in dementia and brain health research.  Unlike a conventional meeting, the focus will be on the constructive yet critical discussion of unresolved controversies.  Launched in November 2019 with funding from The Alan Turing Institute, the Deep Dementia Phenotyping (DEMON) Network is the world's leading initiative for the application of data science and AI to combat dementia and promote brain health. The Network has rapidly grown to over 1,400 members from 60 countries and across six continents. \n\nThis event builds upon dozens of international interdisciplinary workshops, lectures, hackathons, and knowledge transfer events.  The DEMON Network practical Working Groups cover Genetics and Omics, Imaging, Biomarkers, Applied Models and Digital Health, Drug discovery and Trials Optimisation, Prevention, and Experimental models.",
+      "PanelType": "ImageLeft",
+      "PanelImage": "/Assets/images/shutterstock_519552040.jpg"
+    },
+    {
+      "PanelType": "ImageRight",
+      "PanelText": "**Day 1: Grand challenges and possible solutions**\n\n11:30-12:00 Registration opens\n\n12:00-13:00 Lunch\n\n13:00-13:10 Welcome by Prof David Llewellyn (DEMON Network Director) and Chair Dr Xin You Tai (University of Oxford)\n\n13:10-14:10 Debate 1: Is it time to abandon the concept of mild cognitive impairment in favour of a data-driven alternative? (Led by Dr Peter Bagshaw, NHS Somerset Clinical Commissioning Group)\n\n14:10-14:30 Networking over coffee\n\n14:30-15:30 Debate 2: Are conventional statistical models fit for purpose?\n\n15:30-15:50 Networking over coffee\n\n15:50-16:50 Debate 3: Will AI make things worse? (Led by Prof Malcolm MacLeod, University of Edinburgh)\n\n16:50-17:00 Closing remarks by Dr Janice Ranson (DEMON Network Deputy Director)\n\n17:15 Drinks reception and dinner (at the restaurant Estiatorio Milos, a 4-minute work from the Royal Society)",
+      "PanelTitle": "Programme (Day One)",
+      "PanelImage": "/Assets/images/summitone.jpg"
+    },
+    {
+      "PanelText": "**Day 2: Community building and changing the landscape**\n\n09:00 – 09:30 Registration opens\n\n09:30-09:40 Welcome\n\n09:40-10:40 Debate 1: How can we unlock data more effectively? (Led by Dr Ben Busby, DNAnexus, US)\n\n10:40-11:10 Networking over coffee\n\n11:10 – 12:10 Debate 2: How do we overcome information overload? (Led by Dr Mattias Arnold, Helmholtz Zentrum München, Germany)\n\n12:10 – 13:10 Lunch\n\n13:10-14:10 Workshop 1: Enhancing experimental medicine (Led by Prof Caleb Webber, Unversity of Cardiff and UK Dementia Research Institute)\n\n14:10-14:40 Networking over coffee\n\n14:40-15:40 Workshop 2: Towards precision dementia medicine (Led by Prof David Llewellyn, DEMON Network Director)\n\n15:40-15:50 Closing remarks by Prof David Llewellyn (DEMON Network Director)\n\n15:50-17:00 Informal drinks and further discussion\n\n17:00 Meeting close",
+      "PanelTitle": "Programme (Day Two)",
+      "PanelType": "ImageLeft",
+      "PanelImage": "/Assets/images/summittwo.png"
+    }
+  ]
+}
