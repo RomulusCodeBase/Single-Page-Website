@@ -536,6 +536,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-height: 550px;
 }
 
+.max-h-\[685px\] {
+  max-height: 685px;
+}
+
 .min-h-\[70px\] {
   min-height: 70px;
 }
