@@ -528,6 +528,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 600px;
 }
 
+.min-h-\[100px\] {
+  min-height: 100px;
+}
+
+.min-h-\[125px\] {
+  min-height: 125px;
+}
+
 .w-full {
   width: 100%;
 }
