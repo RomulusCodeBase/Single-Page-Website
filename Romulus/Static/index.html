@@ -23,7 +23,7 @@
 
                 <h1 class="absolute font-medium font-roboto text-4xl text-white tablet-up:right-[18%] overline" data-aos="fade-down"><b>Romulus Energy</b></h2>
                 <span class="bg-white opacity-50 h-[100%] min-w-[50%] hidden tablet-up:block absolute left-0 max-h-[550px]"></span>
-                <img class="opacity-100 max-w-[300px] left-[18%] absolute hidden tablet-up:block" data-aos="fade-right" src="./Assets/images/MainLogo.png" />
+                <img class="opacity-100 max-w-[300px] left-[18%] absolute hidden tablet-up:block border-black border-[3px] border-solid" data-aos="fade-right" src="./Assets/images/MainLogo.png" />
                 <img src="./Assets/images/HeroImage.jpg" class="mb-[400px]">
 
             </div>
@@ -37,7 +37,7 @@
     <div id="contents-container" class="-mt-[30px] bg-white px-sitepadding min-w-full font-roboto] m-auto overflow-hidden py-[50px]" data-aos="fade-up" x-init="RenderComponents">
         <template x-for="panel in ContentBlocks[1].data.PanelList">
             <div class="flex flex-wrap flex-col tablet-up:flex-row" :class="panel.PanelType">
-                <div class="flex-1 relative p-[50px] min-h-[600px] tablet-up:max-w-panel-width text-purple flex items-center justify-center border-purple border-[3px] border-solid" :class="panel.PanelType">
+                <div class="flex-1 relative p-[50px] min-h-[600px] tablet-up:max-w-panel-width text-purple flex items-center justify-center border-black border-[3px] border-solid" :class="panel.PanelType">
                     <div class="max-w-[600px]">
                         <h2 class="uppercase font-roboto font-medium overline text-[30px] mb-[25px]" x-text="panel.PanelTitle"></h2>
                         <p class="text-black font-roboto" x-html="panel.PanelText"></p>
@@ -50,10 +50,6 @@
                 </div>
             </div>
         </template>
-
-        <div class="min-h-[600px] bg-purple w-full mt-[30px]">
-
-        </div>
     </div>
 
     <footer data-aos="fade-up" class="w-full px-sitepadding flex items-center justify-between bg-black text-white min-h-[125px] font-roboto" x-text="ContentBlocks[0].data.Title">
