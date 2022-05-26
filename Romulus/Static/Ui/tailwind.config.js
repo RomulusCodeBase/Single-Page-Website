@@ -9,7 +9,7 @@ module.exports = {
         white: '#FFFFFF', 
         black: '#000000',
         blue: '#89CFF0',
-        purple: '#CF9FFF',
+        purple: '#8c52ff',
         grey: '#A9A9A9'
       },
       padding: {
@@ -31,7 +31,7 @@ module.exports = {
         'particles-height': '200vh'
       },
       screens: {
-        'tablet-up': '1000px'
+        'tablet-up': '1250px'
       },
 
     },

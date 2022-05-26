@@ -476,16 +476,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.right-\[17\%\] {
-  right: 17%;
-}
-
 .left-0 {
   left: 0px;
 }
 
-.left-\[17\%\] {
-  left: 17%;
+.left-\[18\%\] {
+  left: 18%;
 }
 
 .m-auto {
@@ -540,16 +536,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-height: 550px;
 }
 
-.min-h-\[125px\] {
-  min-height: 125px;
+.min-h-\[70px\] {
+  min-height: 70px;
 }
 
 .min-h-\[600px\] {
   min-height: 600px;
 }
 
-.min-h-\[70px\] {
-  min-height: 70px;
+.min-h-\[125\] {
+  min-height: 125;
 }
 
 .w-full {
@@ -644,7 +640,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-purple {
   --tw-border-opacity: 1;
-  border-color: rgb(207 159 255 / var(--tw-border-opacity));
+  border-color: rgb(140 82 255 / var(--tw-border-opacity));
 }
 
 .bg-\[\#D1D1D1\] {
@@ -660,6 +656,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(140 82 255 / var(--tw-bg-opacity));
 }
 
 .p-\[50px\] {
@@ -716,7 +717,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-purple {
   --tw-text-opacity: 1;
-  color: rgb(207 159 255 / var(--tw-text-opacity));
+  color: rgb(140 82 255 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -771,9 +772,9 @@ html {
   cursor: pointer;
 }
 
-@media (min-width: 1000px) {
-  .tablet-up\:right-\[17\%\] {
-    right: 17%;
+@media (min-width: 1250px) {
+  .tablet-up\:right-\[18\%\] {
+    right: 18%;
   }
 
   .tablet-up\:block {
