@@ -532,10 +532,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 20px;
 }
 
-.max-h-\[550px\] {
-  max-height: 550px;
-}
-
 .max-h-\[685px\] {
   max-height: 685px;
 }
@@ -756,6 +752,10 @@ html {
 }
 
 .FullWidth ~ .FullWidth1{
+  display: none;
+}
+
+.FullWidth > :nth-child(2){
   display: none;
 }
 
