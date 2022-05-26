@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: /Assets/Images
+media_folder: Static/Assets/images
 
 collections:
   - name: "Contents"
