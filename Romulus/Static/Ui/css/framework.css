@@ -11,7 +11,9 @@ html {
     flex: auto;
     margin: 50px 0px;
     font-size: x-large;
-    background-color: #BB1819;
+    background-color: #8c52ff;
+    border: none !important;
+    color: white;
 }
 
 .FullWidth p{

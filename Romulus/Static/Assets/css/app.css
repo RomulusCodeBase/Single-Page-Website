@@ -508,10 +508,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 25px;
 }
 
-.mt-\[30px\] {
-  margin-top: 30px;
-}
-
 .block {
   display: block;
 }
@@ -546,10 +542,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-h-\[600px\] {
   min-height: 600px;
-}
-
-.min-h-\[125\] {
-  min-height: 125;
 }
 
 .min-h-\[125px\] {
@@ -641,19 +633,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-style: solid;
 }
 
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-purple {
-  --tw-border-opacity: 1;
-  border-color: rgb(140 82 255 / var(--tw-border-opacity));
-}
-
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-\[\#D1D1D1\] {
@@ -669,11 +656,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-purple {
-  --tw-bg-opacity: 1;
-  background-color: rgb(140 82 255 / var(--tw-bg-opacity));
 }
 
 .p-\[50px\] {
@@ -760,7 +742,9 @@ html {
   flex: auto;
   margin: 50px 0px;
   font-size: x-large;
-  background-color: #BB1819;
+  background-color: #8c52ff;
+  border: none !important;
+  color: white;
 }
 
 .FullWidth p{
