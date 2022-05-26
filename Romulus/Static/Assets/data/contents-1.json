@@ -4,7 +4,7 @@
       "PanelTitle": "Test Panel",
       "PanelText": "This will be content",
       "PanelType": "ImageLeft",
-      "PanelImage": "/Assets/Images/pexels-pixabay-356036.jpg"
+      "PanelImage": "https://www.pexels.com/photo/blue-solar-panel-board-356036/"
     }
   ]
 }
