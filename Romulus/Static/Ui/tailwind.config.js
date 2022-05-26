@@ -31,7 +31,7 @@ module.exports = {
         'particles-height': '200vh'
       },
       screens: {
-        'tablet-up': '800px'
+        'tablet-up': '1000px'
       },
 
     },

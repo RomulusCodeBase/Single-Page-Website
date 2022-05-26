@@ -12,20 +12,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet"> 
 </head>
 <body x-data="homepage" class="overflow-x-hidden m-auto max-w-[1920px] bg-[#D1D1D1]">
-    <div class="w-full bg-black min-h-[125px] 
+    <div class="w-full bg-black min-h-[70px] 
     flex items-center justify-center uppercase font-medium overline text-[50px] text-center text-white px-sitepadding">
-        <h1 id="Title" class="font-roboto font-black" data-aos="fade-down" x-text="ContentBlocks[0].data.Title"></h1>
+        <h1 id="Title" class="font-roboto font-black" data-aos="fade-down"></h1>
     </div>
 
     <div class="block overflow-hidden">
         <div class="flex-col m-auto flex items-center justify-center">
             <div class="max-h-[550px] overflow-hidden flex w-full items-center justify-center min-w-[1920px]">
-                <h1 class="absolute font-medium font-roboto text-4xl text-white"><b>Bringing cheaper energy</b></h2>
+                <h1 class="absolute font-medium font-roboto text-4xl text-white tablet-up:right-[17%]"><b>Romulus Energy</b></h2>
+                <span class="bg-white opacity-50 h-[100%] min-w-[50%] hidden tablet-up:block absolute left-0 max-h-[550px]"></span>
+                <img class="opacity-100 max-w-[300px] left-[17%] absolute hidden tablet-up:block" src="./Assets/images/MainLogo.png" />
                 <img src="./Assets/images/HeroImage.jpg" class="mb-[400px]">
             </div>
             <div @click="ScrollToContent()"
-            class="hover:cursor-pointer border-[3px] -mt-[100px] mb-[100px] border-solid border-white h-[30px] w-[30px] rounded-full flex align-center justify-center">
-                <img src="./Assets/images/DownArrow.svg" alt="Site Logo" class="rotate-180 m-auto h-[20px]"/>
+            class="hover:cursor-pointer border-[3px] -mt-[100px] mb-[100px] border-solid border-white h-[30px] w-[30px] rounded-full flex align-center justify-center z-100">
+            <img src="./Assets/images/DownArrow.svg" alt="Site Logo" class="rotate-180 m-auto h-[20px]"/>
             </div>
         </div>
     </div>
@@ -48,7 +50,7 @@
         </template>
     </div>
 
-    <footer data-aos="fade-up" class="w-full px-sitepadding flex items-center justify-between bg-black text-white min-h-[125px] font-roboto">
+    <footer data-aos="fade-up" class="w-full px-sitepadding flex items-center justify-between bg-black text-white min-h-[70px] font-roboto" x-text="ContentBlocks[0].data.Title">
        
     </footer>
 
