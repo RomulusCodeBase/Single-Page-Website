@@ -4,7 +4,7 @@
       "PanelTitle": "Test Panel",
       "PanelText": "This will be content",
       "PanelType": "ImageLeft",
-      "PanelImage": "/Assets/Images/pexels-pixabay-356036.jpg"
+      "PanelImage": "https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
   ]
 }
