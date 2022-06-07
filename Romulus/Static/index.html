@@ -99,11 +99,11 @@
                 <div class="flex-1 relative min-h-[600px] tablet-up:max-w-panel-width bg-purple flex items-center justify-center border-blue border-[3px] border-solid" :class="panel.PanelType">
                     <div class="max-w-[600px]">
                         <h2 class="uppercase font-roboto font-medium overline text-[30px] mb-[25px]" x-text="panel.PanelTitle"></h2>
-                        <p class="text-black font-roboto" x-html="panel.PanelText"></p>
+                        <p class="text-white font-roboto" x-html="panel.PanelText"></p>
                     </div>
                 </div>
-                <div class="justify-center flex-1 tablet-up:p-[50px] bg-panel-one tablet-up:min-h-[600px] tablet-up:max-w-panel-width flex items-center" :class="panel.PanelType">
-                    <div class="min-height: 100%">
+                <div class="justify-center flex-1 bg-panel-one tablet-up:min-h-[600px] tablet-up:max-w-panel-width flex items-center" :class="panel.PanelType">
+                    <div class="min-h-full">
                         <img :src="panel.PanelImage" />
                     </div>
                 </div>

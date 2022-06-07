@@ -11,14 +11,14 @@ html {
     flex: auto;
     margin: 50px 0px;
     font-size: x-large;
-    background-color: #19003c;
+    background-color: #7A63FF;
     border: none !important;
-    color: #7A63FF;
+    color: white;
 }
 
 .FullWidth p{
 
-    color: #7A63FF !important;
+    color: white !important;
 
 }
 
