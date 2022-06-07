@@ -3,6 +3,7 @@ document.addEventListener('alpine:init', () => {
         ContentBlocks: [
 
         ],
+        ShowMenu: false,
         ScrollToContent(){
             var content = document.getElementById("contents-container");
             content.scrollIntoView();
@@ -22,6 +23,13 @@ document.addEventListener('alpine:init', () => {
                     this.ContentBlocks[1].data.PanelList[Panel].PanelText = RevisedHtml;
                 }
             }));
+        },
+        ToggleMenu(x){
+            var menu = document.getElementById("menu");
+            var mainMenu = document.getElementById("main-menu");
+            menu.classList.toggle("change");
+            mainMenu.classList.toggle("hidden");
+            body.classList.toggle("overflow-y-hidden")
         }
     }))
 })

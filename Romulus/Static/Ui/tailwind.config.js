@@ -8,8 +8,9 @@ module.exports = {
       colors: {
         white: '#FFFFFF', 
         black: '#000000',
-        blue: '#89CFF0',
-        purple: '#8c52ff',
+        blue: '#7bd4ea',
+        purple: '#7A63FF',
+        darkpurple: '#19003c',
         grey: '#A9A9A9'
       },
       padding: {
@@ -19,7 +20,7 @@ module.exports = {
         'webkit-fill': '-webkit-fill-available',
       }, 
       fontFamily: {
-        roboto: "'Roboto Slab', serif",
+        roboto: "'Roboto', serif",
       },
       maxWidth: {
         'sitewidth': '1200px',
