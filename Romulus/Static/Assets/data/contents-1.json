@@ -25,7 +25,16 @@
     },
     {
       "PanelTitle": "Contact Us",
-      "PanelText": "Dummy Address\n\nLorem Ipsum Sit Amet\n\nDummy Pin\n\nDummy place\n\nTelephone : 1-800-123-4567\n\nEmail : info@dummy.com",
+      "PanelText": "212 Mount Pleasant,\n\nRedditch,\n\nWorcestershire,\n\nRomulus Energy LTD\n\n\n\nTelephone : 0330 3208 350 \n\nEmail : [info@romulusenergyltd.co.uk](mailto:info@romulusenergyltd.co.uk)",
+      "PanelType": "FullWidth"
+    },
+    {
+      "PanelTitle": "Merchant Services",
+      "PanelType": "FullWidth"
+    },
+    {
+      "PanelTitle": "Telecommunications",
+      "PanelText": "",
       "PanelType": "FullWidth"
     }
   ]
