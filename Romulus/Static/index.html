@@ -77,12 +77,12 @@
 
     <div class="block overflow-hidden">
         <div class="flex-col m-auto flex items-center justify-center">
-            <div id="header-container" class="overflow-hidden flex w-full items-center justify-center min-w-[1920px] max-w-[1920px] relative">
+            <div id="header-container" class="overflow-hidden flex w-full items-center justify-center min-w-[1920px] max-w-[1920px] relative grayscale-[25%]">
                 <img src="./Assets/images/Hero-Image-3.jpg" class="min-w-screen ">
                 <img src="./Assets/images/HeroImage.jpeg" class="min-w-screen -mt-[300px]">
                 <img src="./Assets/images/Hero-Image-2.jpg" class="min-w-screen -mt-[300px]">
             </div>
-            <div class="text-white font-roboto absolute top-[50%] text-center flex flex-col items-center">
+            <div class="text-white font-roboto absolute top-[50%] text-center flex flex-col items-center" data-aos="fade-down">
                 <h1 class="text-5xl font-bold mt-0 mb-6">Romulus Energy Ltd.</h1>
                 <h2 class="text-4xl font-bold mt-0 mb-6">Energy building bridges.</h2>
                 <div @click="ScrollToContent()"
@@ -93,17 +93,17 @@
         </div>
     </div>
 
-    <div id="contents-container" class="-mt-[30px] bg-white px-sitepadding min-w-full font-roboto] m-auto overflow-hidden py-[50px]" data-aos="fade-up" x-init="RenderComponents">
+    <div id="contents-container" class="-mt-[30px] bg-darkpurple px-sitepadding min-w-full font-roboto] m-auto overflow-hidden py-[50px]" data-aos="fade-up" x-init="RenderComponents">
         <template x-for="panel in ContentBlocks[1].data.PanelList">
-            <div class="flex flex-wrap flex-col tablet-up:flex-row" :class="panel.PanelType">
-                <div class="flex-1 relative p-[50px] min-h-[600px] tablet-up:max-w-panel-width text-purple flex items-center justify-center border-black border-[3px] border-solid" :class="panel.PanelType">
+            <div class="flex flex-wrap flex-col tablet-up:flex-row -ml-[2px] -mt-[2px]" :class="panel.PanelType">
+                <div class="flex-1 relative min-h-[600px] tablet-up:max-w-panel-width bg-purple flex items-center justify-center border-blue border-[3px] border-solid" :class="panel.PanelType">
                     <div class="max-w-[600px]">
                         <h2 class="uppercase font-roboto font-medium overline text-[30px] mb-[25px]" x-text="panel.PanelTitle"></h2>
                         <p class="text-black font-roboto" x-html="panel.PanelText"></p>
                     </div>
                 </div>
                 <div class="justify-center flex-1 tablet-up:p-[50px] bg-panel-one tablet-up:min-h-[600px] tablet-up:max-w-panel-width flex items-center" :class="panel.PanelType">
-                    <div class="max-w-[800px]">
+                    <div class="min-height: 100%">
                         <img :src="panel.PanelImage" />
                     </div>
                 </div>
