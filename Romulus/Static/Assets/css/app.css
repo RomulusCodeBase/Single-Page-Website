@@ -616,6 +616,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 125px;
 }
 
+.min-h-\[inherit\] {
+  min-height: inherit;
+}
+
 .w-full {
   width: 100%;
 }

@@ -29,7 +29,7 @@ document.addEventListener('alpine:init', () => {
             var mainMenu = document.getElementById("main-menu");
             menu.classList.toggle("change");
             mainMenu.classList.toggle("hidden");
-            body.classList.toggle("overflow-y-hidden")
+            document.body.classList.toggle("overflow-hidden")
         }
     }))
 })
