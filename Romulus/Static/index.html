@@ -93,7 +93,7 @@
         </div>
     </div>
 
-    <div id="contents-container" class="-mt-[30px] bg-darkpurple px-sitepadding min-w-full font-roboto] m-auto overflow-hidden py-[50px]" data-aos="fade-up" x-init="RenderComponents">
+    <div id="contents-container" class="-mt-[30px] bg-darkpurple px-sitepadding min-w-full font-roboto m-auto overflow-hidden py-[50px]" data-aos="fade-up" x-init="RenderComponents">
         <template x-for="panel in ContentBlocks[1].data.PanelList">
             <div class="flex flex-wrap flex-col tablet-up:flex-row -ml-[2px] -mt-[2px]" :class="panel.PanelType">
                 <div class="flex-1 relative min-h-[600px] tablet-up:max-w-panel-width bg-purple flex items-center justify-center border-blue border-[3px] border-solid" :class="panel.PanelType">
