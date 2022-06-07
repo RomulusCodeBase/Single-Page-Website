@@ -96,9 +96,9 @@
     <div id="contents-container" class="-mt-[30px] bg-darkpurple px-sitepadding min-w-full font-roboto m-auto overflow-hidden py-[50px]" data-aos="fade-up" x-init="RenderComponents">
         <template x-for="panel in ContentBlocks[1].data.PanelList">
             <div class="flex flex-wrap flex-col tablet-up:flex-row -ml-[2px] -mt-[2px]" :class="panel.PanelType">
-                <div class="flex-1 relative min-h-[600px] tablet-up:max-w-panel-width bg-purple flex items-center justify-center border-blue border-[3px] border-solid" :class="panel.PanelType">
+                <div class="flex-1 relative min-h-[600px] tablet-up:max-w-panel-width bg-purple flex items-center justify-center border-blue border-[3px] border-solid p-[50px]" :class="panel.PanelType">
                     <div class="max-w-[600px]">
-                        <h2 class="uppercase font-roboto font-medium overline text-[30px] mb-[25px]" x-text="panel.PanelTitle"></h2>
+                        <h2 class="text-white uppercase font-roboto font-medium overline text-[30px] mb-[25px]" x-text="panel.PanelTitle"></h2>
                         <p class="text-white font-roboto" x-html="panel.PanelText"></p>
                     </div>
                 </div>
