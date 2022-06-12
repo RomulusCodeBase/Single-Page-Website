@@ -22,18 +22,12 @@ collections:
     create: true 
     slug: "{{slug}}"
     files:
-      - label: "Site Panels"
-        name: "Panel"
-        file: "Romulus/Static/Assets/data/{{slug}}.json"
+      - file: "Romulus/Static/Assets/data/{{slug}}.json"
+        label: "Content"
+        name: "Content"
         fields:
-          - label: "Panel List"
-            name: "PanelList"
-            widget: "list"
-            fields:
-              - { name: PanelTitle, label: Panel Title, widget: "string", required: false}
-              - { name: PanelText, label: Panel Text, widget: "markdown", required: false}
-              - { name: PanelType, label: Panel Type, widget: "select", options: ["ImageLeft", "ImageRight", "FullWidth"]}
-              - { name: PanelImage, label: Panel Image, widget: "image", required: false}
+          - { name: Title, label: Title, widget: string }
+          - { name: Footer, label: Footer, widget: string }
   
   - name: "Panels"
     label: "Homepage"
