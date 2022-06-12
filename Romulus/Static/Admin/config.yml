@@ -24,6 +24,25 @@ collections:
     fields: 
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
+  
+  - name: "Pages"
+    label: "Page"
+    description: "Add a page to your website"
+    files:
+      - label: "Site Panels"
+        create: true 
+        slug: "{{slug}}"
+        name: "Panel"
+        file: "Romulus/Static/Assets/data/{{slug}}.json"
+        fields:
+          - label: "Panel List"
+            name: "PanelList"
+            widget: "list"
+            fields:
+              - { name: title, label: Panel Title, widget: "string", required: false}
+              - { name: PanelText, label: Panel Text, widget: "markdown", required: false}
+              - { name: PanelType, label: Panel Type, widget: "select", options: ["ImageLeft", "ImageRight", "FullWidth"]}
+              - { name: PanelImage, label: Panel Image, widget: "image", required: false}
      
 
 
