@@ -6,7 +6,7 @@
   "scripts": {
     "build-css:dev": "npx tailwindcss -c ./tailwind.config.js -i ./css/framework.css -o ../Assets/css/app.css --watch"
   },
-  "author": "connor & paulo",
+  "author": "connor",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.4",
