@@ -16,26 +16,31 @@ collections:
           - { name: Title, label: Title, widget: string }
           - { name: Footer, label: Footer, widget: string }
 
-  - name: "page" 
-    label: "Pages" 
-    folder: "Romulus/Static" 
-    files:
-      - file: "Romulus/Static/Assets/data/{{slug}}.json"
-        slug: "{{slug}}"
-        create: true 
-        label: "Content"
-        name: "Content"
-        fields:
-          - { name: Title, label: Title, widget: string }
-          - { name: Footer, label: Footer, widget: string }
   
   - name: "Panels"
     label: "Homepage"
     description: "Add a panel to your homepage"
     files:
-      - label: "Site Panels"
+      - label: "Page Panels"
         name: "Panel"
         file: "Romulus/Static/Assets/data/contents-1.json"
+        fields:
+          - label: "Panel List"
+            name: "PanelList"
+            widget: "list"
+            fields:
+              - { name: PanelTitle, label: Panel Title, widget: "string", required: false}
+              - { name: PanelText, label: Panel Text, widget: "markdown", required: false}
+              - { name: PanelType, label: Panel Type, widget: "select", options: ["ImageLeft", "ImageRight", "FullWidth"]}
+              - { name: PanelImage, label: Panel Image, widget: "image", required: false}
+
+  - name: "Panels"
+    label: "Contact"
+    description: ""
+    files:
+      - label: "Page Panels"
+        name: "Panel"
+        file: "Romulus/Static/Assets/data/contact.json"
         fields:
           - label: "Panel List"
             name: "PanelList"

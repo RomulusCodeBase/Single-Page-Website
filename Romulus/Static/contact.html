@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Romulus Energy</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <link href="./Tools/aos.min.css" rel="stylesheet" type="text/css">
+    <link href="./Assets/css/app.css" rel="stylesheet" type="text/css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body x-data="homepage" class="overflow-x-hidden m-auto max-w-[1920px] bg-[#D1D1D1] shadow-lg">
+
+    <div id="main-menu" class="right-0 top-0 bottom-0 left-0 bg-darkpurple absolute z-[200] min-h-screen hidden">
+    
+        <ul class="max-w-sitewidth px-sitepadding flex items m-auto min-h-screen flex-col justify-center text-center font-medium font-roboto text-4xl text-purple">
+            <li>
+                <a href="/"><h2>Home</h2></a>
+                <br>                
+            </li>
+            <li>
+                <a href="/businessgas.html"><h2>Business Gas</h2></a>     
+                <br>   
+            </li>
+            <li>
+                <a href="/businesselectricity.html"><h2>Business Electricity</h2></a>     
+                <br>   
+            </li>
+            <li>
+                <a href="/merchantservices.html"><h2>Merchant Services</h2></a> 
+                <br>       
+            </li>
+            <li>
+                <a href="/telecommunication.html"><h2>Tele-communications</h2></a>  
+                <br>      
+            </li>
+            <li>
+                <a href="/contact.html"><h2>Contact Us</h2></a>     
+            </li>
+        </ul>
+    </div>
+
+    <div class="justify-between w-full bg-darkpurple min-h-[70px] 
+    flex items-center uppercase font-medium text-[50px] text-center text-white px-sitepadding">
+    <img class="opacity-100 max-w-[300px]" data-aos="fade-down" src="./Assets/images/MainLogo.jpg" />
+    <div class="container z-[300] block tablet-up:hidden" @click="ToggleMenu(this)" id="menu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <ul class="flex-row text-[16px] no-underline min-w-[900px] justify-between hidden tablet-up:flex text-purple">
+        <li>
+            <a href="/businessgas.html"><h2>Business Gas</h2></a>     
+        </li>
+        <li>
+            <a href="/businesselectricity.html"><h2>Business Electricity</h2></a>      
+        </li>
+        <li>
+            <a href="/water.html"><h2>Water</h2></a>       
+        </li>
+        <li>
+            <a href="/telecommunication.html"><h2>Tele-communications</h2></a>   
+        </li>
+        <li>
+            <a href="/contact.html"><h2>Contact Us</h2></a>     
+        </li>
+    </ul>
+    </div>
+
+    <div class="block overflow-hidden">
+        <div class="flex-col m-auto flex items-center justify-center">
+            <div id="header-container" class="overflow-hidden flex w-full items-center justify-center min-w-[1920px] max-w-[1920px] relative grayscale-[25%]">
+                <img src="./Assets/images/Hero-Image-3.jpg" class="min-w-screen ">
+                <img src="./Assets/images/HeroImage.jpeg" class="min-w-screen -mt-[300px]">
+                <img src="./Assets/images/Hero-Image-2.jpg" class="min-w-screen -mt-[300px]">
+            </div>
+            <div class="text-white font-roboto absolute top-[50%] text-center flex flex-col items-center" data-aos="fade-down">
+                <h1 class="text-5xl font-bold mt-0 mb-6">Romulus Energy Ltd.</h1>
+                <h2 class="text-4xl font-bold mt-0 mb-6">Energy building bridges.</h2>
+                <div @click="ScrollToContent()"
+                    class="hover:cursor-pointer border-[3px] border-solid border-white h-[30px] w-[30px] rounded-full flex align-center justify-center z-100">
+                 <img src="./Assets/images/DownArrow.svg" alt="Site Logo" class="rotate-180 m-auto h-[20px]"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contents-container" class="-mt-[30px] bg-darkpurple px-sitepadding min-w-full font-roboto m-auto overflow-hidden py-[50px]" data-aos="fade-up" x-init="RenderComponents">
+        <template x-for="panel in ContentBlocks[1].data.PanelList">
+            <div class="flex flex-wrap flex-col tablet-up:flex-row -ml-[2px] -mt-[2px]" :class="panel.PanelType">
+                <div class="flex-1 relative min-h-[600px] tablet-up:max-w-panel-width bg-purple flex items-center justify-center p-[50px]" :class="panel.PanelType">
+                    <div class="max-w-[600px]">
+                        <h2 class="text-white uppercase font-roboto font-medium overline text-[30px] mb-[25px]" x-text="panel.PanelTitle"></h2>
+                        <p class="text-white font-roboto" x-html="panel.PanelText"></p>
+                    </div>
+                </div>
+                <div class="justify-center flex-1 bg-panel-one tablet-up:min-h-[600px] tablet-up:max-w-panel-width flex items-center" :class="panel.PanelType">
+                    <div class="min-h-[inherit]">
+                        <img :src="panel.PanelImage" class="min-h-[inherit]" />
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+
+    <footer data-aos="fade-up" class="w-full px-sitepadding flex items-center justify-between bg-darkpurple min-h-[125px] font-roboto text-purple" x-text="ContentBlocks[0].data.Title">
+        
+    </footer>
+    <script src="./Assets/js/pagerouter.js" type="text/javascript"></script>
+    <script src="./Tools/showdown.min.js" defer></script>
+    <script src="./Tools/axios.min.js" type="text/javascript" defer></script>
+    <script src="./Tools/alpine.min.js" type="text/javascript" defer></script>
+    <script src="./Tools/aos.min.js" type="text/javascript" defer></script>
+    <script src="./Assets/js/app.js" type="text/javascript"></script>
+    <script src="./Assets/js/content-loader/contact.js" type="text/javascript"></script>
+</body>
+</html>
