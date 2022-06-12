@@ -16,23 +16,18 @@ collections:
           - { name: Title, label: Title, widget: string }
           - { name: Footer, label: Footer, widget: string }
 
-  - name: page
-    label: Page
-    folder: Romulus/Static"
-    create: true
-    files:
-      - label: "Site Pages"
-        name: "Pages"
-        file: "Romulus/Static/Assets/data/{{slug}}.html"
-        fields:
-          - label: "Pages List"
-            name: "PagesList"
-            widget: "list"
-            fields:
-              - { name: PanelTitle, label: Panel Title, widget: "string", required: false}
-              - { name: PanelText, label: Panel Text, widget: "markdown", required: false}
-              - { name: PanelType, label: Panel Type, widget: "select", options: ["ImageLeft", "ImageRight", "FullWidth"]}
-              - { name: PanelImage, label: Panel Image, widget: "image", required: false}
+  - name: "page" # Used in routes, e.g., /admin/collections/blog
+      label: "Pages" # Used in the UI
+      folder: "Romulus/Static" # The path to the folder where the documents are stored
+      create: true # Allow users to create new documents in this collection
+      slug: "{{slug}}.html" # Filename template, e.g., YYYY-MM-DD-title.md
+      fields: # The fields for each document, usually in front matter
+        - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Publish Date", name: "date", widget: "datetime"}
+        - {label: "Featured Image", name: "thumbnail", widget: "image"}
+        - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+        - {label: "Body", name: "body", widget: "markdown"}
 
 
   - name: "Panels"
