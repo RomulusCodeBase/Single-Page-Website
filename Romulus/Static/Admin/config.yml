@@ -16,16 +16,17 @@ collections:
           - { name: Title, label: Title, widget: string }
           - { name: Footer, label: Footer, widget: string }
 
-  - name: "Pages"
-    label: "Pages"
-    extension: "html"
-    files:
-      - file: "Romulus/Static/Assets/data/{name}.html"
-        label: "Content"
-        name: "Content"
-        fields:
-          - { name: Title, label: Title, widget: string }
-          - { name: Url, label: Url, widget: string }
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: image, label: Image, widget: image }
+      - { name: body, label: Body, widget: markdown }
 
 
   - name: "Panels"
