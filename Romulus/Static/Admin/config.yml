@@ -16,6 +16,17 @@ collections:
           - { name: Title, label: Title, widget: string }
           - { name: Footer, label: Footer, widget: string }
 
+  - name: "Pages"
+    label: "Pages"
+    extension: "html"
+    files:
+      - file: "Romulus/Static/Assets/data/test.html"
+        label: "Content"
+        name: "Content"
+        fields:
+          - { name: Title, label: Title, widget: string }
+          - { name: Url, label: Url, widget: string }
+
 
   - name: "Panels"
     label: "Panels"
@@ -33,6 +44,7 @@ collections:
               - { name: PanelText, label: Panel Text, widget: "markdown", required: false}
               - { name: PanelType, label: Panel Type, widget: "select", options: ["ImageLeft", "ImageRight", "FullWidth"]}
               - { name: PanelImage, label: Panel Image, widget: "image", required: false}
+
   
   
 
