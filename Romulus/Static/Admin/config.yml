@@ -21,7 +21,7 @@ collections:
     folder: "Romulus/Static" 
     create: true 
     slug: "{{slug}}"
-    fields: 
+    files:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - label: "Site Panels"
