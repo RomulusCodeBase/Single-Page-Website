@@ -24,19 +24,7 @@ collections:
     fields: 
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
-      files:
-      - label: "Site Panels"
-        name: "Panel"
-        file: "Romulus/Static/Assets/data/contents-1.json"
-        fields:
-          - label: "Panel List"
-            name: "PanelList"
-            widget: "list"
-            fields:
-              - { name: PanelTitle, label: Panel Title, widget: "string", required: false}
-              - { name: PanelText, label: Panel Text, widget: "markdown", required: false}
-              - { name: PanelType, label: Panel Type, widget: "select", options: ["ImageLeft", "ImageRight", "FullWidth"]}
-              - { name: PanelImage, label: Panel Image, widget: "image", required: false}
+     
 
 
   - name: "Panels"
