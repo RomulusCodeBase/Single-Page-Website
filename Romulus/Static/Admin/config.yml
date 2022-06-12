@@ -43,6 +43,8 @@ collections:
         file: "Romulus/Static/Assets/data/contact.json"
         fields:
           - label: "Panel List"
+            - { name: PanelImage, label: Page Image, widget: "image", required: false}
+            - { name: PanelTitle, label: Page Title, widget: "string", required: false}
             name: "PanelList"
             widget: "list"
             fields:
