@@ -28,6 +28,8 @@ collections:
   - name: "Pages"
     label: "Page"
     description: "Add a page to your website"
+    create: true 
+    slug: "{{slug}}"
     files:
       - label: "Site Panels"
         create: true 
