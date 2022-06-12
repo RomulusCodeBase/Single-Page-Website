@@ -20,7 +20,7 @@ collections:
     label: "Pages" 
     folder: "Romulus/Static" 
     create: true 
-    slug: "{{slug}}" 
+    slug: "{{slug}}"
     files:
       - label: "Site Panels"
         name: "Panel"
@@ -33,7 +33,14 @@ collections:
               - { name: PanelTitle, label: Panel Title, widget: "string", required: false}
               - { name: PanelText, label: Panel Text, widget: "markdown", required: false}
               - { name: PanelType, label: Panel Type, widget: "select", options: ["ImageLeft", "ImageRight", "FullWidth"]}
-              - { name: PanelImage, label: Panel Image, widget: "image", required: false}
+              - { name: PanelImage, label: Panel Image, widget: "image", required: false} 
+    fields: 
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
 
 
   - name: "Panels"
