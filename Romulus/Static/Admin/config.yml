@@ -20,7 +20,7 @@ collections:
     label: "Pages"
     extension: "html"
     files:
-      - file: "Romulus/Static/Assets/data/test.html"
+      - file: "Romulus/Static/Assets/data/{name}.html"
         label: "Content"
         name: "Content"
         fields:
