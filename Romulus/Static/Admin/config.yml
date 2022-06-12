@@ -18,12 +18,21 @@ collections:
 
   - name: page
     label: Page
-    folder: Romulus/Static
+    folder: Romulus/Static"
     create: true
     files:
       - label: "Site Pages"
-        name: "Page"
+        name: "Pages"
         file: "Romulus/Static/Assets/data/{{slug}}.html"
+        fields:
+          - label: "Pages List"
+            name: "PagesList"
+            widget: "list"
+            fields:
+              - { name: PanelTitle, label: Panel Title, widget: "string", required: false}
+              - { name: PanelText, label: Panel Text, widget: "markdown", required: false}
+              - { name: PanelType, label: Panel Type, widget: "select", options: ["ImageLeft", "ImageRight", "FullWidth"]}
+              - { name: PanelImage, label: Panel Image, widget: "image", required: false}
 
 
   - name: "Panels"
