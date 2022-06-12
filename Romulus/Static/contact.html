@@ -109,10 +109,24 @@
         </template>
     </div>
 
+    <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Query: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+
     <footer data-aos="fade-up" class="w-full px-sitepadding flex items-center justify-between bg-darkpurple min-h-[125px] font-roboto text-purple" x-text="ContentBlocks[0].data.Title">
         
     </footer>
-    <script src="./Assets/js/pagerouter.js" type="text/javascript"></script>
     <script src="./Tools/showdown.min.js" defer></script>
     <script src="./Tools/axios.min.js" type="text/javascript" defer></script>
     <script src="./Tools/alpine.min.js" type="text/javascript" defer></script>
