@@ -17,7 +17,7 @@ collections:
           - { name: Footer, label: Footer, widget: string }
 
   
-  - name: "Panels"
+  - name: "Homepage-Panels"
     label: "Homepage"
     description: "Add a panel to your homepage"
     files:
@@ -34,7 +34,7 @@ collections:
               - { name: PanelType, label: Panel Type, widget: "select", options: ["ImageLeft", "ImageRight", "FullWidth"]}
               - { name: PanelImage, label: Panel Image, widget: "image", required: false}
 
-  - name: "Panels"
+  - name: "Contact-Panels"
     label: "Contact"
     description: ""
     files:
