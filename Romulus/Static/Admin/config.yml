@@ -36,15 +36,81 @@ collections:
 
   - name: "Contact-Panels"
     label: "Contact"
-    description: ""
+    description: "Add a panel to your contact page"
     files:
       - label: "Page Panels"
         name: "Panel"
         file: "Romulus/Static/Assets/data/contact.json"
         fields:
           - label: "Panel List"
-            - { name: PanelImage, label: Page Image, widget: "image", required: false}
-            - { name: PanelTitle, label: Page Title, widget: "string", required: false}
+            name: "PanelList"
+            widget: "list"
+            fields:
+              - { name: PanelTitle, label: Panel Title, widget: "string", required: false}
+              - { name: PanelText, label: Panel Text, widget: "markdown", required: false}
+              - { name: PanelType, label: Panel Type, widget: "select", options: ["ImageLeft", "ImageRight", "FullWidth"]}
+              - { name: PanelImage, label: Panel Image, widget: "image", required: false}
+
+  - name: "Tele-Panels"
+    label: "Tele Communications"
+    description: "Add a panel to your tele-communications page"
+    files:
+      - label: "Page Panels"
+        name: "Panel"
+        file: "Romulus/Static/Assets/data/telecomms.json"
+        fields:
+          - label: "Panel List"
+            name: "PanelList"
+            widget: "list"
+            fields:
+              - { name: PanelTitle, label: Panel Title, widget: "string", required: false}
+              - { name: PanelText, label: Panel Text, widget: "markdown", required: false}
+              - { name: PanelType, label: Panel Type, widget: "select", options: ["ImageLeft", "ImageRight", "FullWidth"]}
+              - { name: PanelImage, label: Panel Image, widget: "image", required: false}
+
+  - name: "Water-Panels"
+    label: "Water"
+    description: "Add a panel to your water page"
+    files:
+      - label: "Page Panels"
+        name: "Panel"
+        file: "Romulus/Static/Assets/data/water.json"
+        fields:
+          - label: "Panel List"
+            name: "PanelList"
+            widget: "list"
+            fields:
+              - { name: PanelTitle, label: Panel Title, widget: "string", required: false}
+              - { name: PanelText, label: Panel Text, widget: "markdown", required: false}
+              - { name: PanelType, label: Panel Type, widget: "select", options: ["ImageLeft", "ImageRight", "FullWidth"]}
+              - { name: PanelImage, label: Panel Image, widget: "image", required: false}
+
+  - name: "Gas-Panels"
+    label: "Business Gas"
+    description: "Add a panel to your business gas page"
+    files:
+      - label: "Page Panels"
+        name: "Panel"
+        file: "Romulus/Static/Assets/data/businessgas.json"
+        fields:
+          - label: "Panel List"
+            name: "PanelList"
+            widget: "list"
+            fields:
+              - { name: PanelTitle, label: Panel Title, widget: "string", required: false}
+              - { name: PanelText, label: Panel Text, widget: "markdown", required: false}
+              - { name: PanelType, label: Panel Type, widget: "select", options: ["ImageLeft", "ImageRight", "FullWidth"]}
+              - { name: PanelImage, label: Panel Image, widget: "image", required: false}
+
+  - name: "Electricity-Panels"
+    label: "Business Electricity"
+    description: "Add a panel to your business electricity page"
+    files:
+      - label: "Page Panels"
+        name: "Panel"
+        file: "Romulus/Static/Assets/data/businesselectricity.json"
+        fields:
+          - label: "Panel List"
             name: "PanelList"
             widget: "list"
             fields:
