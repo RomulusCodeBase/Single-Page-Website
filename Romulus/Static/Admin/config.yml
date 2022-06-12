@@ -21,7 +21,10 @@ collections:
     folder: "Romulus/Static" 
     create: true 
     slug: "{{slug}}"
-    files:
+    fields: 
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      files:
       - label: "Site Panels"
         name: "Panel"
         file: "Romulus/Static/Assets/data/contents-1.json"
@@ -33,19 +36,12 @@ collections:
               - { name: PanelTitle, label: Panel Title, widget: "string", required: false}
               - { name: PanelText, label: Panel Text, widget: "markdown", required: false}
               - { name: PanelType, label: Panel Type, widget: "select", options: ["ImageLeft", "ImageRight", "FullWidth"]}
-              - { name: PanelImage, label: Panel Image, widget: "image", required: false} 
-    fields: 
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}
+              - { name: PanelImage, label: Panel Image, widget: "image", required: false}
 
 
   - name: "Panels"
-    label: "Panels"
-    description: "Add a panel to your site"
+    label: "Homepage"
+    description: "Add a panel to your homepage"
     files:
       - label: "Site Panels"
         name: "Panel"
