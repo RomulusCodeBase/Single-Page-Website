@@ -36,6 +36,11 @@
       "PanelTitle": "Telecommunications",
       "PanelText": "",
       "PanelType": "FullWidth"
+    },
+    {
+      "PanelTitle": "test",
+      "PanelText": "test",
+      "PanelType": "FullWidth"
     }
   ]
 }
