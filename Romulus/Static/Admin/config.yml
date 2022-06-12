@@ -45,7 +45,9 @@ collections:
               - { name: PanelText, label: Panel Text, widget: "markdown", required: false}
               - { name: PanelType, label: Panel Type, widget: "select", options: ["ImageLeft", "ImageRight", "FullWidth"]}
               - { name: PanelImage, label: Panel Image, widget: "image", required: false}
-     
+    fields: 
+    - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+    - {label: "Title", name: "title", widget: "string"}
 
 
   - name: "Panels"
