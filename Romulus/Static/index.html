@@ -96,7 +96,7 @@
     <div id="contents-container" class="-mt-[30px] bg-darkpurple px-sitepadding min-w-full font-roboto m-auto overflow-hidden py-[50px]" data-aos="fade-up" x-init="RenderComponents">
         <template x-for="panel in ContentBlocks[1].data.PanelList">
             <div class="flex flex-wrap flex-col tablet-up:flex-row -ml-[2px] -mt-[2px]" :class="panel.PanelType">
-                <div class="flex-1 relative min-h-[600px] tablet-up:max-w-panel-width bg-purple flex items-center justify-center border-blue border-[3px] border-solid p-[50px]" :class="panel.PanelType">
+                <div class="flex-1 relative min-h-[600px] tablet-up:max-w-panel-width bg-purple flex items-center justify-center p-[50px]" :class="panel.PanelType">
                     <div class="max-w-[600px]">
                         <h2 class="text-white uppercase font-roboto font-medium overline text-[30px] mb-[25px]" x-text="panel.PanelTitle"></h2>
                         <p class="text-white font-roboto" x-html="panel.PanelText"></p>
@@ -114,7 +114,7 @@
     <footer data-aos="fade-up" class="w-full px-sitepadding flex items-center justify-between bg-darkpurple min-h-[125px] font-roboto text-purple" x-text="ContentBlocks[0].data.Title">
         
     </footer>
-
+    <script src="./Assets/js/pagerouter.js" type="text/javascript"></script>
     <script src="./Tools/showdown.min.js" defer></script>
     <script src="./Tools/axios.min.js" type="text/javascript" defer></script>
     <script src="./Tools/alpine.min.js" type="text/javascript" defer></script>
