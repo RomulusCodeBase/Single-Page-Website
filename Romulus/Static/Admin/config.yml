@@ -19,10 +19,10 @@ collections:
   - name: "page" 
     label: "Pages" 
     folder: "Romulus/Static" 
-    create: true 
-    slug: "{{slug}}"
     files:
       - file: "Romulus/Static/Assets/data/{{slug}}.json"
+        slug: "{{slug}}"
+        create: true 
         label: "Content"
         name: "Content"
         fields:
